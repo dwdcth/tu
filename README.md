@@ -3,7 +3,7 @@
 <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/tu-lang/tu">
 </p>
 
-tu-lang(凸）是一种编程语言，旨在创造一种非常简单的零依赖(no glibc)动态&&静态语言,全静态链接，已屏蔽了基于c/c++实现的compiler、asmer、linker，目前正在自举中...
+tu-lang(凸）是一种编程语言，旨在创造一种非常简单的零依赖(no glibc)动态&&静态语言,全静态链接，已屏蔽了基于c/c++实现的compiler、asmer、linker，`目前已自举完成: compiler采用纯动态语法，asmer部分纯静态语法，linker部分动静混合语法`.
 ```asciidoc
 tu      [options] file.tu        
     -s    file  ast -> asm       编译.tu代码 生成.s汇编文件
@@ -25,7 +25,7 @@ tl      [options|file.o...]
   - [x] run 自动编译链接后执行
   - [x] -s  编译为低等级汇编码
   - [x] -d  开启打印debug信息
-- [ ] ta([asmer](./asmer))
+- [x] ta([asmer](./asmer))
   - [x] -c  翻译指定汇编码为linux(elf),windows(pe/coff)
   - [x] -p  批量扫描路径下的汇编
 - [x] tl([linker/demo](./linker))
